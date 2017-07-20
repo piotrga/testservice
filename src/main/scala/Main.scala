@@ -15,7 +15,7 @@ object Main extends App{
       pathSingleSlash {
         get {
           complete {
-            "Hello world "+System.currentTimeMillis()
+            s"Hello world ${java.net.InetAddress.getLocalHost.getHostName}"+System.currentTimeMillis()
           }
         }
       }
